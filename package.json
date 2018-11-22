@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-chatbot",
+  "version": "1.0.0",
+  "description": "Node.js chatbot SDK3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomyy4/nodejs-chatbot.git"
+  },
+  "author": "tomeu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomyy4/nodejs-chatbot/issues"
+  },
+  "homepage": "https://github.com/tomyy4/nodejs-chatbot#readme",
+  "dependencies": {
+    "botbuilder": "^3.15.0",
+    "restify": "^7.2.3"
+  }
+}
