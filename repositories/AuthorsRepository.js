@@ -13,3 +13,5 @@ class AuthorsRepository {
 		});
 	}
 }
+
+module.exports = AuthorsRepository;

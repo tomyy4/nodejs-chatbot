@@ -2,17 +2,23 @@ var connection = require('../db/db.js');
 
 class BooksRepository {
 
-	getBooks() {
+	getBooks(callback) {
+		var books = [];
 		connection.query("Select * from books", function (err,result){
 			if (err) {
 				throw err;
 			}
-
-			console.log(result);
+			if (result) {
+				for(var i = 0; i<result.length; i++ ){     
+                    books.push(result[i]);
+        		}
+			}
+			callback(null,books);
+			//console.log(result);
 		});
 	}
 }
 
 
 
-var booksRepo = new BooksRepository();
+module.exports = BooksRepository;
