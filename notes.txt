@@ -1,0 +1,39 @@
+Factory
+-------
+El lobo estepario
+La insoportable levedad del ser
+La montaña mágica
+Teoría King Kong
+Muerte en venecia
+Harry Potter y la piedra filosofal
+Por quién doblan las campanas
+El guardián entre el centeno
+Los juegos del hambre
+La revolución permanente
+
+-----
+Author
+------
+Name - string
+books
+
+-----
+Book
+-----
+Name - string
+Title - string
+Description - string
+price - float
+author_id - integer
+
+----
+Gift
+----
+from - email
+to - email
+book
+
+
+----
+show me the books -> eloquent -> books (5)
+books from persona -> eloquent -> books->where('author',request);

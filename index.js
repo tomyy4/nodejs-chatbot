@@ -54,6 +54,8 @@ var goodbyeDialog = new dialog.GoodbyeDialog();
 var anythingElseDialog = new dialog.AnythingElseDialog();
 var singleAuthorDialog = new dialog.SingleAuthorDialog();
 var singleBookDialog = new dialog.SingleBookDialog();
+var thankYouDialog = new dialog.ThankYouDialog();
+var apologyDialog = new dialog.ApologyDialog();
 
 
 //FUNCTION CALLS
@@ -65,6 +67,8 @@ bot.dialog('initialDialog',initialDialog.getDialog()).triggerAction({matches:tri
 bot.dialog('insultsDialog',insultsDialog.getDialog()).triggerAction({matches:triggers.insultsRegexp});
 bot.dialog('singleAuthorDialog',singleAuthorDialog.getDialog()).triggerAction({matches:triggers.singleAuthorRegexp});
 bot.dialog('singleBookDialog',singleBookDialog.getDialog()).triggerAction({matches:triggers.singleBookRegexp});
+bot.dialog('thankYouDialog',thankYouDialog.getDialog()).triggerAction({matches:triggers.thanksRegexp});
+bot.dialog('apologyDialog',apologyDialog.getDialog()).triggerAction({matches:triggers.apologiesRegexp});
 
 
 

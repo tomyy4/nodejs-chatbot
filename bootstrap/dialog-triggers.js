@@ -6,5 +6,7 @@ module.exports = {
 	booksRegexp : require('../intelligence/books'),
  	authorsRegexp : require('../intelligence/authors.js'),
  	singleAuthorRegexp : require('../intelligence/singleAuthor.js'),
- 	singleBookRegexp : require('../intelligence/singleBook.js')
+ 	singleBookRegexp : require('../intelligence/singleBook.js'),
+ 	thanksRegexp : require('../intelligence/thanks.js'),
+ 	apologiesRegexp : require('../intelligence/apologies.js'),
 }

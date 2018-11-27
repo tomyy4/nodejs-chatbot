@@ -1,4 +1,3 @@
-var builder = require('botbuilder');
 var authorsService = require('../services/authors');
 
 class AuthorsDialog {

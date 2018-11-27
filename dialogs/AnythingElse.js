@@ -1,4 +1,4 @@
-
+var builder = require('botbuilder');
 
 class AnythingElseDialog {
 
@@ -10,8 +10,11 @@ class AnythingElseDialog {
 			function(session,results) {
 				if (results.response.index === 0) {
 					session.beginDialog('initialDialog');
-				} else {
+					session.endDialog();
+				} 
+				if (results.response.index === 1) {
 					session.beginDialog('goodbyeDialog');
+					session.endDialog();
 				}
 			}
 		]

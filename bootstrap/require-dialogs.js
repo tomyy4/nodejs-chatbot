@@ -11,7 +11,9 @@ module.exports = {
 	GoodbyeDialog: require('../dialogs/Goodbye'),
 	InsultsDialog: require('../dialogs/Insults'),
 	SingleAuthorDialog: require('../dialogs/SingleAuthor'),
-	SingleBookDialog: require('../dialogs/SingleBook')
+	SingleBookDialog: require('../dialogs/SingleBook'),
+	ThankYouDialog: require('../dialogs/Thanks'),
+	ApologyDialog: require('../dialogs/Apologies')
 };
 
 
