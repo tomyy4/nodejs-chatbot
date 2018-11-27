@@ -12,8 +12,8 @@ var books = {
 	        }
 	    });		
 	},
-	getBookById: function($id) {
-		request('http://localhost/bookstore/public/books/' + $id, (err,response,body) => {
+	getBookById: function(id) {
+		request('http://localhost/bookstore/public/books/' + id, (error,response,body) => {
  			if (!error && response.statusCode == 200) {
  				var result = JSON.parse(body);
 	            return callback(null, result);
@@ -21,18 +21,7 @@ var books = {
 	            return callback(null, error);
 	        }
 		});
-	},
-	getBookByName: function($name) {
-		request('http://localhost/bookstore/public/books/book/' + $name, (err,response,body) => {
- 			if (!error && response.statusCode == 200) {
- 				var result = JSON.parse(body);
-	            return callback(null, result);
-	        } else {            
-	            return callback(null, error);
-	        }
-		});		
-
-	}	
+	}
 }
 
 module.exports = books;
