@@ -3,16 +3,16 @@ var authorsService = require('../services/authors');
 
 class AuthorsDialog {
 
-
 	getDialog() {
         return [
     		function(session) {
-                session.send("Authors:");
-                var authorMessage = "";
+                var authorMessage = "Authors <br>";
+                authorMessage += "---------";
+                authorMessage += "<br>";
             	authorsService.getAllAuthors(function(err,result) {
                 	var i = 0;
                 	for (i; i < result.length; i++) {
-                        authorMessage += result[i].name + ". Country: " + result[i].country + ". Born: " + result[i].date_of_birth + "<br>";
+                        authorMessage += result[i].name + "<br>";
                     }
                 	session.send(authorMessage);
             	});    
