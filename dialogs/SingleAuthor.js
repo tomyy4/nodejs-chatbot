@@ -12,7 +12,7 @@ class SingleAuthorDialog {
 	        },
 	        function(session,results) {
 	            var res = results.response;
-	        	request('http://localhost/bookstore/public/authors/author/' + res, (error,response,body) => {
+	        	request('http://localhost:8000/api/authors/author/' + res, (error,response,body) => {
 	            	if (body) {
 	                	var parsed = JSON.parse(body);
 	               	    var card = utilities.getAuthorCard(session,parsed.name,parsed.biography,parsed.date_of_birth,parsed.country);

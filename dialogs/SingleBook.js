@@ -12,7 +12,7 @@ class SingleBookDialog {
         	},
             function(session,results) {
                 var res = results.response;
-                request('http://localhost/bookstore/public/books/book/' + res, (error,response,body) => {
+                request('http://localhost:8000/api/books/book/' + res, (error,response,body) => {
                     if (body) {
                         var parsed = JSON.parse(body);
                         var card = utilities.getCard(session,parsed.title,parsed.sinopsis,parsed.published_in,parsed.img);

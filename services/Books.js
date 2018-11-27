@@ -3,7 +3,7 @@ var request = require('request');
 
 var books = {
 	getAllBooks: function(callback) {
-	    request('http://localhost/bookstore/public/books', function(error, response, body) {
+	    request('http://localhost:8000/api/books', function(error, response, body) {
 	        if (!error && response.statusCode == 200) {
 	        	var result = JSON.parse(body);
 	            return callback(null, result);
@@ -13,7 +13,7 @@ var books = {
 	    });		
 	},
 	getBookById: function(id) {
-		request('http://localhost/bookstore/public/books/' + id, (error,response,body) => {
+		request('http://localhost:8000/api/books/' + id, (error,response,body) => {
  			if (!error && response.statusCode == 200) {
  				var result = JSON.parse(body);
 	            return callback(null, result);
