@@ -12,7 +12,7 @@ class InitialDialog {
         		builder.SuggestedActions.create(
             		session, [
                 		builder.CardAction.imBack(session, "Show me the books", "Show me the books"),
-                    	builder.CardAction.imBack(session, "I want to send a gift", "I'd like to send a gift"),
+                    	builder.CardAction.imBack(session, "Show me the authors", "Show me the authors"),
                     	builder.CardAction.imBack(session, "goodbye", "Not now, thank you")
                 	]
             	));

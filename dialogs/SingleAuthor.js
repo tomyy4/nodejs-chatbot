@@ -8,7 +8,7 @@ class SingleAuthorDialog {
 	getDialog(){
 		return [
 			function(session) {
-	                builder.Prompts.text(session,"Which author?");
+	                builder.Prompts.text(session,"Write the author's name and I'll look for it");
 	        },
 	        function(session,results) {
 	            var res = results.response;

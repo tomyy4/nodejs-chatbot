@@ -9,7 +9,7 @@ class GoodbyeDialog {
 	getDialog() {
 		return [
 			function(session) {
-				session.endDialog('see ya');
+				session.endDialog('Bye! Hope you see you soon :)');
 			}
 		];
 	}

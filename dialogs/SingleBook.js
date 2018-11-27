@@ -8,7 +8,7 @@ class SingleBookDialog {
 	getDialog() {
 		return [
      		function(session) {
-                builder.Prompts.text(session,"tell me the book you're looking for");
+                builder.Prompts.text(session,"Tell me the book you're looking for");
         	},
             function(session,results) {
                 var res = results.response;
