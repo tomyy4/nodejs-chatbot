@@ -1,5 +1,5 @@
 
 
-var thanks = /^thanks$|thank.*you$/i;
+var thanks = /^thanks$|thank.*you$|ty$/i;
 
 module.exports = thanks;
