@@ -9,7 +9,9 @@ module.exports = {
 	BooksDialog: require('../dialogs/Books'),
 	AnythingElseDialog: require('../dialogs/AnythingElse'),
 	GoodbyeDialog: require('../dialogs/Goodbye'),
-	InsultsDialog: require('../dialogs/Insults')
+	InsultsDialog: require('../dialogs/Insults'),
+	SingleAuthorDialog: require('../dialogs/SingleAuthor'),
+	SingleBookDialog: require('../dialogs/SingleBook')
 };
 
 
