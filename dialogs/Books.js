@@ -4,8 +4,7 @@ var books = require('../services/books');
 var utilities = new Utils();
 
 class BooksDialog {
-
-    
+ 
 	getDialog() {
         return [
     		function(session) {

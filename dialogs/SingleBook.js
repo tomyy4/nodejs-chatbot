@@ -1,4 +1,7 @@
 var request = require('request');
+var builder = require('botbuilder');
+var Utils = require('../utils/Utils');
+var utilities = new Utils();
 
 class SingleBookDialog {
 

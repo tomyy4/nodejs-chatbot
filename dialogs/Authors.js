@@ -10,7 +10,7 @@ class AuthorsDialog {
                 session.send("Authors:");
                 var authorMessage = "";
             	authorsService.getAllAuthors(function(err,result) {
-                	var i = 1;
+                	var i = 0;
                 	for (i; i < result.length; i++) {
                         authorMessage += result[i].name + ". Country: " + result[i].country + ". Born: " + result[i].date_of_birth + "<br>";
                     }
